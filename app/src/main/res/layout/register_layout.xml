@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="REGISTRO"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/otraeleccion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/otraeleccion2"
+        app:layout_constraintEnd_toStartOf="@+id/otraeleccion2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/otraeleccion2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/otraeleccion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/otraeleccion3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otraeleccion1"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/otraeleccion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/otraeleccion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otraeleccion2"
+        app:layout_constraintTop_toTopOf="@+id/otraeleccion2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#9B9B9B"
+        android:text="EDITAR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/borrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otraeleccion1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#9B9B9B"
+        android:text="BORRAR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editar"
+        app:layout_constraintTop_toBottomOf="@+id/otraeleccion3"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

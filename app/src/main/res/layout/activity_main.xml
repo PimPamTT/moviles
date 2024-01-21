@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/eleccion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/eleccion2"
+        app:layout_constraintEnd_toStartOf="@+id/eleccion2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eleccion2"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/eleccion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="2º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eleccion3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eleccion1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/eleccion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3º ELECCIÓN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/eleccion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eleccion2"
+        app:layout_constraintTop_toTopOf="@+id/eleccion2"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/felicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FF00"
+        android:text="FELICIDAD"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/ira"
+        app:layout_constraintEnd_toStartOf="@+id/ira"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ira"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/tristeza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FF"
+        android:text="TRISTEZA"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/ira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ira"
+        app:layout_constraintTop_toTopOf="@+id/ira"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/ira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FF0000"
+        android:text="IRA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/tristeza"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/felicidad"
+        app:layout_constraintTop_toBottomOf="@+id/eleccion2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#9B9B9B"
+        android:text="REINICIAR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ira"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/e2"
+        app:layout_constraintEnd_toEndOf="@+id/eleccion1"
+        app:layout_constraintStart_toStartOf="@+id/eleccion1"
+        app:layout_constraintTop_toTopOf="@+id/e2"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/eleccion2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/eleccion2"
+        app:layout_constraintTop_toBottomOf="@+id/eleccion2"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/e2"
+        app:layout_constraintEnd_toEndOf="@+id/eleccion3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/eleccion3"
+        app:layout_constraintTop_toTopOf="@+id/e2"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/eleccion3"
+        app:layout_constraintEnd_toEndOf="@+id/eleccion3"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
