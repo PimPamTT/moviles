@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.utils.KSP_PLUGIN_ID
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
