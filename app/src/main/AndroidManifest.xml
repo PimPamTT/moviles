@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MoodCrafter"
         tools:targetApi="31">
         <activity
-            android:name=".EntityData"
+            android:name=".model.Conversation"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".model.EntityData"
+            android:exported="false" />
+        <activity
+            android:name=".model.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

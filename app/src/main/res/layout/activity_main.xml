@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#555555"
-    tools:context=".MainActivity">
+    tools:context=".model.MainActivity">
 
     <TextView
         android:id="@+id/eleccion1"
@@ -59,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ira"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,UnusedAttribute" />
 
     <Button
         android:id="@+id/tristeza"
@@ -73,7 +73,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ira"
         app:layout_constraintTop_toTopOf="@+id/ira"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="HardcodedText, UnusedAttribute,TextContrastCheck"
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/ira"
@@ -87,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/felicidad"
         app:layout_constraintTop_toBottomOf="@+id/eleccion2"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,UnusedAttribute" />
 
     <Button
         android:id="@+id/reiniciar"
@@ -101,7 +102,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ira"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,UnusedAttribute" />
 
     <TextView
         android:id="@+id/e1"
@@ -145,10 +146,36 @@
         android:id="@+id/nregistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="1"
+        android:layout_marginTop="10dp"
+        android:text="[]"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/eleccion3"
-        app:layout_constraintEnd_toEndOf="@+id/eleccion3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eleccionActual"
         tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/eleccionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="ELECCIÓN ACTUAL"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlMainActivity"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlMainActivity"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

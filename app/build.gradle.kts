@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -14,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.moodcrafter"
-        minSdk = 24
+        minSdk = 16
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -41,6 +42,9 @@ android {
 }
 
 dependencies {
+    val room_version = "2.5.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context=".model.Conversation">
+
+    <TextView
+        android:id="@+id/EJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="EJ1"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlConversation"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Respuesta 1."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EJ1"
+        app:layout_constraintTop_toBottomOf="@+id/EJ1"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/EJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="EJ2"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R1"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="Respuesta 2."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/EJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EJ2"
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/EJ3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="EJ3"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R2"
+        tools:ignore="HardcodedText,TextSizeCheck,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Respuesta 3."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EJ3"
+        app:layout_constraintTop_toBottomOf="@+id/EJ3"
+        tools:ignore="HardcodedText, TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/EJ4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="EJ4"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R3"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R4"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="right"
+        android:text="Respuesta 4."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/EJ4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EJ4"
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/EJ5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="EJ5"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R4"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R5"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Respuesta 5."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EJ5"
+        app:layout_constraintTop_toBottomOf="@+id/EJ5"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/EJ6"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="EJ6"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R5"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R6"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="right"
+        android:text="Respuesta 6."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/EJ6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EJ6"
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/EJ7"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="EJ7"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R6"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/R7"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Respuesta 7."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EJ7"
+        app:layout_constraintTop_toBottomOf="@+id/EJ7"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlConversation"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

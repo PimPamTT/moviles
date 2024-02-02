@@ -72,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/otraeleccion1"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,UnusedAttribute" />
 
     <Button
         android:id="@+id/borrar"
@@ -86,5 +86,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editar"
         app:layout_constraintTop_toBottomOf="@+id/otraeleccion3"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,UnusedAttribute" />
 </androidx.constraintlayout.widget.ConstraintLayout>
